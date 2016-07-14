@@ -1,6 +1,6 @@
 {
   "name": "sugo-ci-interface",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CI scripts for interface projects.",
   "main": "lib",
   "scripts": {
