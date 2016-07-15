@@ -2,7 +2,7 @@
 
 'use strict'
 
-const sugoCiInterface = require('sugo-ci-interface')
+const { build } = require('sugo-ci-module')
 
-sugoCiInterface.build({})
+build({})
 

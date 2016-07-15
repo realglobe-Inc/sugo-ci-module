@@ -1,15 +1,16 @@
 {
-  "name": "sugo-ci-interface",
-  "version": "1.0.2",
+  "name": "sugo-ci-module",
+  "version": "2.0.0",
   "description": "CI scripts for interface projects.",
   "main": "lib",
   "scripts": {
     "prepublish": "./ci/build.js",
     "test": "./ci/test.js"
   },
-  "repository": "realglobe-Inc/sugo-ci-interface",
+  "repository": "realglobe-Inc/sugo-ci-module",
   "keywords": [
-    "SUGOS"
+    "SUGOS",
+    "CI"
   ],
   "author": {
     "name": "Taka Okunishi",
@@ -18,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/realglobe-Inc/sugo-ci-interface/issues"
+    "url": "https://github.com/realglobe-Inc/sugo-ci-module/issues"
   },
-  "homepage": "https://github.com/realglobe-Inc/sugo-ci-interface#readme",
+  "homepage": "https://github.com/realglobe-Inc/sugo-ci-module#readme",
   "dependencies": {
     "aglob": "^1.0.1",
     "ape-compiling": "^5.0.0",
