@@ -1,7 +1,7 @@
 {
   "name": "sugo-ci-module",
   "version": "2.0.1",
-  "description": "CI scripts for interface projects.",
+  "description": "CI scripts for module projects.",
   "main": "lib",
   "scripts": {
     "prepublish": "./ci/build.js",
