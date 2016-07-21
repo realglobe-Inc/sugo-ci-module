@@ -97,6 +97,7 @@ Available functions
 
 | Signature | Description |
 | ---- | ----------- |
+| `.browser(options) -> Promise` | Compile to browser source |
 | `.build(options) -> Promise` | Build the project |
 | `.cover(options) -> Promise` | Measure coverage of the project |
 | `.format(options) -> Promise` | Format the project |

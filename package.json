@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-ci-module#readme",
   "dependencies": {
+    "ababel": "^1.0.19",
+    "ababel-es2015": "^1.0.2",
     "aglob": "^1.0.1",
     "amocha": "^1.0.8",
     "ape-deploying": "^5.0.3",
