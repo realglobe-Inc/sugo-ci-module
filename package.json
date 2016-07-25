@@ -35,7 +35,9 @@
     "ape-tmpl": "^5.0.14",
     "ape-updating": "^4.0.4",
     "ape-watching": "^2.1.2",
+    "asfs": "^1.0.5",
     "co": "^4.6.0",
+    "findout": "^2.0.1",
     "stringcase": "^3.0.1"
   },
   "devDependencies": {
