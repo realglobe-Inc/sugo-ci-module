@@ -42,7 +42,8 @@
   "devDependencies": {
     "ape-doc": "^2.0.4",
     "defaults": "^1.0.3",
-    "injectmock": "^2.0.0"
+    "injectmock": "^2.0.0",
+    "sugos-travis": "^2.0.7"
   },
   "engines": {
     "node": ">=6",
