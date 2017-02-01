@@ -2,10 +2,10 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > .npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> .npmrc
-- cat .npmrc
-- npm install babel-cli node-sass fur -g
+- npm i npm-cli-login -g
+- echo "NPM_USER=${NPM_USER}"
+- npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+- npm install node-sass fur -g
 install:
 - npm install
 before_script:
@@ -13,5 +13,8 @@ before_script:
 script:
 - ./ci/build.js
 - ./ci/test.js
-- ./ci/cover.js
-- ./ci/report.js
+after_success:
+- ./ci/travis/publish.js
+- ./ci/travis/push_sugos_index.js
+env:
+  secure: "i/uNM3V+DOi/P8huxmZvkAuqc91atl0jVJokIyU30vGXy+dEBNsAkm5DuYEi5HrdtwrNz+xNQ1wcAaH/K63NF9zO30RoJ9LAVEwPOx8jidchK15kyoYHBYoD9KJ2QU9GqLKc0idi4fy6MFwcgWRVJHGbpZ0hk3QPunQMzbj5rBnNwLMo0xkd/GDLVD2ulGkdXn0DLKrFh6rH5J34yLzr1PRAvA5oy+q/GFAtbE3n+T/fAAF+PMIWYM0hHqCdA9Yaq24XSGfhsQD1pGJguLkk0i5aej/ehA88A7NbrzlEDpGhaxEpyZLr+6gV97y0VFG40w0lDNBlfGyw3346XmhZKdbtLkkMcPo42uiHHoDR0csdhV0lH2ZkZlNmi4zw7u0GTNe6h9tWHq38EImoRocSg1alGe21TL6qoscuGnseDlRoik96aBAN+WG3t0D3o+FQVwn9LW7BNZgrUQxRboTqLkap/OebhEaewvgcW8gHqIPoHo5JjaBlSPsN0ihnsylvbtRpiZ5FfdmBKFxvc1sbksFgUqC/lk9rhGPAZSdn4a/gwnr/41Dh+fITzpZlH3LRtCVwTQXX64S7JSpo/hySBnfP+UEyCapsK6vP3hTimxm8w9OV/jFvLkxfIkQ7WRWkSAtP7wtRNA+lNfwYodFOIEo+flGfOWcDvFpocmhJbfk="
