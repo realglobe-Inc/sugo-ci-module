@@ -1,6 +1,6 @@
 {
   "name": "sugo-ci-module",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "CI scripts for module projects.",
   "main": "lib",
   "scripts": {
